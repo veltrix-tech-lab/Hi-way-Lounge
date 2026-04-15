@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><h1>Hi-way Lounge</h1></title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: black;
+}
+nav h1 {
+    color: gold;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero h2 {
+    font-size: 40px;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+}
+
+/* MENU */
+.menu {
+    padding: 40px;
+    text-align: center;
+}
+.menu h2 {
+    color: gold;
+}
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+.item {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 40px;
+    text-align: center;
+    background: black;
+}
+button {
+    background: gold;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <h1>Hi-way Lounge</h1>
+    <div>
+        <a href="#">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h2>Good Food. Great Vibes. Chill Moments.</h2>
+</div>
+
+<!-- MENU -->
+<section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+        <div class="item">
+  <h3>Nyama Choma</h3>
+  <p>KES 900</p>
+</div>
+
+<div class="item">
+  <h3>Chicken Wings</h3>
+  <p>KES 700</p>
+</div>
+
+<div class="item">
+  <h3>Cocktails</h3>
+  <p>From KES 500</p>
+</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Order Now</h2>
+    <p>Call or WhatsApp us</p>
+    <button onclick="window.location.href='https://wa.me/254700000000'">
+        Order on WhatsApp
+    </button>
+</section>
+
+</body>
+</html>
